@@ -1,0 +1,222 @@
+:root {
+ --primary: purple;
+ --spacing: 4rem
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body{ 
+     font-family: 'Roboto', sans-serif;
+}
+
+header { 
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding: var(--spacing);
+ font-family: 'Roboto', sans-serif;
+}
+
+h1 { 
+    margin-bottom: 2rem;
+    font-size: 5vw;
+    font-weight: bold;
+    line-height: 1.4vmax;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.neutral-theme {
+    background-color: white;
+    --button-color: var(--primary);
+    --button-hover-color: white;
+}
+
+.primary-theme {
+    color: white;
+    background-color: var(--primary);
+    --button-color: white;
+    --button-hover-color: var(--primary);
+}
+
+section {
+    padding: var(--spacing);
+}
+
+
+.heading-highlight { 
+    color: purple;
+}
+
+.resume {
+    display: inline-block;
+    width: max-content;
+    padding: 1rem;
+    border: 2px solid white;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background: url(file:///Users/megan/Documents/DEV1/Portfolio/CV.pdf;);
+
+}
+
+.button {
+ display: inline-block;
+ width: max-content;
+ padding: 1rem;
+ border: 2px solid var(--primary);
+ font-weight: bold;
+ text-decoration: none;
+ color: var(--primary);
+}
+
+.button:hover {
+    color:white;
+    background-color: var(--primary);
+}
+
+.about-container {
+  margin:0 auto;
+}
+
+
+
+.about-img {
+    display:block;
+    max-width: 400px;
+    filter: grayscale(83%);
+    
+    
+    
+}
+
+.about-img:hover{
+    filter:grayscale(0);
+}
+
+
+
+.p{
+    margin-bottom: 1rem;
+    line-height: 1.4em;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Fredoka One', cursive;
+
+font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+
+blockquote {
+    margin-top: var(--spacing);
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+}
+
+cite{
+ display: block;
+ margin-top: 1rem;
+ font-size: 1rem;
+ font-style: normal;
+}
+
+article{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.project-image {
+ margin-bottom: 2rem;
+ border-radius: 1Opx;
+}
+
+.contact{
+ text-align: center;
+}
+
+footer{
+  padding: var(--spacing);
+  text-align: center;
+  color:white;
+  background-color: #333;
+}
+
+.social{
+    display:flex;
+    justify-content: center;
+    margin-bottom: var(--spacing);
+    gap:4rem;
+}
+
+.social-link{
+ display: block;
+ width: 60px;
+ height: 60px;
+ font-size: 0;
+ color: transparent;
+ background: no-repeat;
+ background-size: 60px;
+ transform: scale(1);
+}
+
+.social-link:hover{
+    transform: scale(1.2); 
+    transition: all 0.3s ease-in-out;
+}
+
+.Instagram{
+    background-image: url(https://victorious-curvy-bookcase.glitch.me/images/linkedin.svg);
+}
+
+.Twitter {
+background-image: url(https://victorious-curvy-bookcase.glitch.me/images/twitter.svg);
+}
+
+.Github{
+    background-image: url(https://victorious-curvy-bookcase.glitch.me/images/github.svg);
+}
+
+
+
+
+@media (min-width: 800px){
+    .about-container {
+        display:flex;
+    }
+   .about-text {
+       margin-left: var(--spacing);
+   } 
+   article{
+       flex-direction: row;
+       max-width: 960px;
+       margin: 0 auto var(--spacing);
+   }
+
+   .project-image{
+       margin-left: 2rem;
+       max-width: 350px;
+       
+   }
+}
