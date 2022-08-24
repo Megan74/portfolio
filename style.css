@@ -101,12 +101,9 @@ section {
 
 
 .about-img {
-    display:block;
-    max-width: 400px;
+    
     filter: grayscale(83%);
-    
-    
-    
+   
 }
 
 .about-img:hover{
